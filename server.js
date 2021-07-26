@@ -5,6 +5,8 @@ const notes = require('./Develop/db/db.json');
 const fs = require('fs');
 const path = require('path');
 
+app.use(express.static('public'));
+
 // Express middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -48,6 +50,16 @@ app.post('/api/notes', (req, res) => {
     const note = createNewNote(req.body, notes);
     res.json(req.body)
     }
+});
+
+// Connect to homepage 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './Develop/public/index.html'));
+});
+
+// Connect to notespage
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, './Develop/public/notes.html'));
 });
 
 // To start server 
