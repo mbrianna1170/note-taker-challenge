@@ -5,7 +5,7 @@ const notes = require('./Develop/db/db.json');
 const fs = require('fs');
 const path = require('path');
 
-app.use(express.static('public'));
+app.use(express.static('Develop/public'));
 
 // Express middleware
 app.use(express.urlencoded({ extended: true }));
@@ -60,6 +60,11 @@ app.get('/', (req, res) => {
 // Connect to notespage
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, './Develop/public/notes.html'));
+});
+
+// Get redirected in case of error request
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './Develop/public/index.html'));
 });
 
 // To start server 
