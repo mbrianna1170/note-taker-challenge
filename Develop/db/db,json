@@ -5,7 +5,11 @@
       "text": "Test text"
     },
     {
+<<<<<<< HEAD
       "title": "To-Do",
+=======
+      "title": "Things To Do ",
+>>>>>>> 72a1eec6d947c10e7dc61b7c876a0e20071eb0a8
       "text": "Laundry ",
       "id": "1"
     }

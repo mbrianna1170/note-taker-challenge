@@ -62,10 +62,17 @@ app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, './Develop/public/notes.html'));
 });
 
+<<<<<<< HEAD
 // Get redirected in case of error request 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, './Develop/public/index.html'));
 })
+=======
+// Get redirected in case of error request
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './Develop/public/index.html'));
+});
+>>>>>>> 72a1eec6d947c10e7dc61b7c876a0e20071eb0a8
 
 // To start server 
 app.listen(PORT, () => {
