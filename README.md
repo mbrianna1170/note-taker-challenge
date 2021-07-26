@@ -17,3 +17,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 - THEN that note appears in the right-hand column
 - WHEN I click on the Write icon in the navigation at the top of the page
 - THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+# Deployed App:
+https://limitless-depths-18887.herokuapp.com/
+# Video of App:
+https://drive.google.com/file/d/1t-C7ua2gzJuP8D-MdczcIJQqNuopsA38/view
